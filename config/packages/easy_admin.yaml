@@ -1,0 +1,22 @@
+easy_admin:
+    formats:
+        date:     'd/m/Y'
+        time:     'H:i'
+        datetime: 'd/m/Y H:i'
+    site_name: "Administration de CocoDOM"
+    user:
+        name_property_path: "username"
+    design:
+        brand_color: '#1ABC9C'
+        form_theme:
+            - '@EasyAdmin/form/bootstrap_4.html.twig'
+        menu:
+            - { label: 'Tableau de bord', route: 'dashboard' }
+            - { label: 'Administration' }
+            - Data
+            - Type
+            - User
+    entities:
+        - App\Entity\Data
+        - App\Entity\Type
+        - App\Entity\User
